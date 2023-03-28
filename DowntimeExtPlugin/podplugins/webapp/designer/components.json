@@ -1,0 +1,16 @@
+{
+    "components" : [
+    ],
+    "extensions": [
+        {
+           "provider": "sap/dm/dme/oeeplugins/downtimePlugin/ExtensionProvider",
+           "controller": "sap.dm.dme.oeeplugins.downtimePlugin",
+           "inclusions": [
+               {
+                   "pods": ["CW_TEST"],
+                   "plants": ["1010"]
+               }
+           ]
+        }
+    ]
+}
