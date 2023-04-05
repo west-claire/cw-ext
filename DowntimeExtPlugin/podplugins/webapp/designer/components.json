@@ -3,7 +3,7 @@
     ],
     "extensions": [
         {
-           "provider": "sap/dm/dme/oeeplugins/downtimePlugin/ExtensionProvider",
+           "provider": "sap/ext/sample/downtimeExtensionProvider/ExtensionProvider",
            "controller": "sap.dm.dme.oeeplugins.downtimePlugin",
            "inclusions": [
                {

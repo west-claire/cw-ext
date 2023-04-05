@@ -2,7 +2,7 @@ _schema-version: '3.2'
 ID: ExampleViewPluginsMTA
 version: 0.0.1
 modules:
- - name: vendor-viewplugin
+ - name: downtime-ext
    type: html5
    path: podplugins
    parameters:
@@ -12,8 +12,8 @@ modules:
         httpHeaders:
         - X-Frame-Options: deny
         CORS: "[{\"uriPattern\": \"^/podplugins/(.*)$\",\"allowedOrigin\": [
-               {\"host\": \"<DMC_HOST1>\",\"protocol\": \"https\"},
-               {\"host\": \"<DMC_HOST2>\",\"protocol\": \"https\"}],
+               {\"host\": \"dmcdev1-dm-canary-dev-execution.cfapps.sap.hana.ondemand.com\",\"protocol\": \"https\"},
+               {\"host\": \"localhost:10000\",\"protocol\": \"http\"}],
                \"allowedMethods\": [\"GET\",\"OPTIONS\"],
                \"allowedHeaders\":[\"Origin\", \"Accept\",\"X-Requested-With\",\"Content-Type\",
                      \"Access-Control-Request-Method\",\"Access-Control-Request-Headers\",\"Authorization\",
